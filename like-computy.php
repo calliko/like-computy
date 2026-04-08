@@ -182,7 +182,7 @@ function popular_like_computy_shortcode($atts){
    $table_lc = json_decode(json_encode($table_lc), true);
 
     $students = [];
-    $k='';
+    $k = 0;
     foreach ($table_lc as $value=>$item){
         $students[$k] = $item['post_id'];
         $k++;
